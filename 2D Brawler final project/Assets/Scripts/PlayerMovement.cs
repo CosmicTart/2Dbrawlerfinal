@@ -20,6 +20,7 @@ public class PlayerMovement : MonoBehaviour
         if(Input.GetButtonDown("Jump"))
         {
             jump = true;
+            Debug.Log("WE JUMPING");
         }
 
 
@@ -28,10 +29,12 @@ public class PlayerMovement : MonoBehaviour
             if (Input.GetButtonDown("Crouch"))
             {
                 crouch = true;
+                Debug.Log("WE CROUCHIN");
             }
             else if (Input.GetButtonUp("Crouch"))
             {
                 crouch = false;
+                Debug.Log("WE NOT CROUCHING BOYS");
             }
         }
     }
