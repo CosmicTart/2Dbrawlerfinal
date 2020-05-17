@@ -6,19 +6,36 @@ public class PlayerCombat : MonoBehaviour
 {
     //public Animator animator;
 
+    //attack parameters
     public Transform attackPoint;
-    public float attackRange = 0.5f;
+    public float attackRange = 0.9f;
     public LayerMask enemyLayers;
+    public int atkDamage = 20;
+
+    private float timeBtwAttack;
+    public float startTimeBtwAttack;
+
+
 
 
 
     void Update()
     {
-        if(Input.GetButton("Fire1"))
-        {
-            Attack();
+        if(timeBtwAttack <= 0)
+            { 
+            if (Input.GetButton("Fire1"))
+            {
+                Attack();
+            }
+            timeBtwAttack = startTimeBtwAttack;
         }
+        else
+        {
+            timeBtwAttack -= Time.deltaTime;
+        }
+
     }
+
 
     void Attack()
     {
@@ -34,14 +51,15 @@ public class PlayerCombat : MonoBehaviour
         foreach (Collider2D enemy in hitEnemies)
         {
             Debug.Log("We hit " + enemy.name);
+            enemy.GetComponent<Enemies>().TakeDamage(atkDamage);
         }
 
     }
-    void onDrawGizmosSelected()
+    void OnDrawGizmosSelected()
     {
         if (attackPoint == null)
             return;
-
+        Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(attackPoint.position, attackRange);
     }
 
