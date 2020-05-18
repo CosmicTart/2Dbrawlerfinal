@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":true,"pivot":{"x":-0.646568775177002,"y":0.22949856519699098,"z":-51.009765625},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":11.873783111572266,"orthographic":true}
+=======
+﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":true,"pivot":{"x":471.5003967285156,"y":468.04986572265627,"z":-4.966475963592529},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":209.6950225830078,"orthographic":true}
+>>>>>>> UIEdits
