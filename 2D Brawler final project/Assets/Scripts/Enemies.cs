@@ -28,6 +28,7 @@ public class Enemies : MonoBehaviour
         if (currentHealth <= 0)
         {
             Die();
+            FindObjectOfType<AudioManager>().Play("Death"); // death sound
         }
     }
 

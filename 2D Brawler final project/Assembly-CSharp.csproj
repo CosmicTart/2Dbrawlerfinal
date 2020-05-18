@@ -63,12 +63,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\AudioManager.cs" />
     <Compile Include="Assets\Scripts\BetterJump.cs" />
     <Compile Include="Assets\Scripts\CharacterController2D.cs" />
     <Compile Include="Assets\Scripts\Enemies.cs" />
     <Compile Include="Assets\Scripts\Jump.cs" />
     <Compile Include="Assets\Scripts\PlayerCombat.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\Sound.cs" />
+    <Compile Include="Assets\Scripts\Teleportation.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>D:/Users/OneDrive/School/ART 108 - GAME STUDIES Sec 2/Unity project/2Dbrawlerfinal/2D Brawler final project/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
