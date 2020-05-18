@@ -21,14 +21,15 @@ public class Enemies : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
-        Debug.Log("enemy took " + damage + " damage");
+        Debug.Log("enemy took " + damage + " damage. ");
         currentHealth -= damage;
+        FindObjectOfType<AudioManager>().Play("Punch1");
 
         Debug.Log("Enemy at " + currentHealth);
         if (currentHealth <= 0)
         {
             Die();
-            FindObjectOfType<AudioManager>().Play("Death"); // death sound
+            //FindObjectOfType<AudioManager>().Play("Death"); // death sound
         }
     }
 
